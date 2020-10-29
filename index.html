@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <meta name="msapplication-TileImage" content="./apple-touch-icon.png" />
+  </head>
+  <body>
+    <header>
+      <h1 class="tit-lv1">Demo</h1>
+    </header>
+
+    <main>
+      <section class="sec-lv2">
+        <h2 class="tit-lv2">〇件のコメント</h2>
+
+        <div class="list-comment">
+          <div class="list-comment-item">
+            <p class="name">〇〇〇〇 より：</p>
+            <p class="comment">サンプル</p>
+          </div>
+        </div>
+
+        <h3 class="tit-lv3">コメントを残す</h3>
+        <p>メールアドレスが公開されることはありません。<br><em class="required">*</em>がついている欄は必須項目です。</p>
+
+        <form id="js-comment">
+          <dl class="list-form">
+            <dt>コメント<em class="required">*</em></dt>
+            <dd><textarea id="form-comment" name="comment" maxlength="5000" placeholder="コメント" required></textarea></dd>
+            <dt>名前<em class="required">*</em></dt>
+            <dd><input id="form-name" type="text" name="name" placeholder="名前" required /></dd>
+            <dt>メールアドレス<em class="required">*</em></dt>
+            <dd><input id="form-email" type="email" name="email" placeholder="メールアドレス" required /></dd>
+            <dt>WEBサイト</dt>
+            <dd><input id="form-url" type="url" name="url" placeholder="WEBサイト" /></dd>
+          </dl>
+          <button type="button" class="confirm" disabled>コメントを送信</button>
+        </form>
+
+      </section>
+      <!-- /.sec-lv2 -->
+    </main>
+
+    <footer>
+      <div class="sec-ad-bottom">
+        <ul class="list-ad js-adlist">
+          <li class="list-ad-item-current"><span class="js-timer-current"></span>あなたの他に<span class="js-num-people">0</span>人が見ています</li>
+          <li class="list-ad-item-cd">キャンペーン終了まで<span class="js-timer-cd"></span></li>
+          <li class="list-ad-item-link">お得に購入できる特設ページは<a href="">こちら</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

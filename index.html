@@ -21,6 +21,10 @@
         var height = document.getElementsByTagName("html")[0].scrollHeight;
         window.parent.postMessage(["setHeight", height], "*");
       }
+      window.resize = function() {
+        var height = document.getElementsByTagName("html")[0].scrollHeight;
+        window.parent.postMessage(["setHeight", height], "*");
+      }
     </script>
   </head>
   <body>
